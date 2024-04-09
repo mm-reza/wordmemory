@@ -30,24 +30,24 @@ jobs:
     # Authenticate to the the server via ssh
     # and run our deployment script
 
-  security-check:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      # - name: Checkout repository
-      #   uses: actions/checkout@v2
+  # security-check:
+  #   needs: test
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     # - name: Checkout repository
+  #     #   uses: actions/checkout@v2
 
-      # Empty step to pass the security-check job without any action
-      - name: No action needed
-        run: echo "No security checks required"
+  #     # Empty step to pass the security-check job without any action
+  #     - name: No action needed
+  #       run: echo "No security checks required"
 
-  deploy:
-    needs: security-check
-    runs-on: ubuntu-latest
-    steps:
-      # - name: Checkout repository
-      #   uses: actions/checkout@v2
+  # deploy:
+  #   needs: security-check
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     # - name: Checkout repository
+  #     #   uses: actions/checkout@v2
       
-      # Empty step to pass the deploy job without any action
-      - name: No action needed
-        run: echo "No deployment needed"
+  #     # Empty step to pass the deploy job without any action
+  #     - name: No action needed
+  #       run: echo "No deployment needed"
