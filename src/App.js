@@ -1,18 +1,16 @@
-// import logo from './logo.svg';
+import React, { useState } from 'react';
+
 import './App.css';
-import MyQuiz from './components/Quiz';
+
+import Home from './components/HomePage';
 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Quiz
-        </p>
 
-
-        < MyQuiz/>
+        < Home/>
 
       </header>
 
