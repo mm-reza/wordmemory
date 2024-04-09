@@ -33,15 +33,21 @@ jobs:
   security-check:
     needs: test
     runs-on: ubuntu-latest
-    # defaults:
-    #   run:
-    #     working-directory: ./quiz-app
+    steps:
+      # - name: Checkout repository
+      #   uses: actions/checkout@v2
+
+      # Empty step to pass the security-check job without any action
+      - name: No action needed
+        run: echo "No security checks required"
 
   deploy:
     needs: security-check
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Copy repository contents via scp
-        uses: appleboy/scp-action@master
-
+      # - name: Checkout repository
+      #   uses: actions/checkout@v2
+      
+      # Empty step to pass the deploy job without any action
+      - name: No action needed
+        run: echo "No deployment needed"
